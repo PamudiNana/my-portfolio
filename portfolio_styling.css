@@ -92,28 +92,35 @@ aside img{
 .about{
     display: flex;
     margin: auto;
-    width: 50%;
-    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+
 }
 .picture2{
-    width: 550px;
+    width: 40%;
+    min-width: 400px;
     height: 700px;
     flex-shrink: 0;
     border-radius: 30px;
     overflow: hidden;
 }
 .picture2 img{
-    width: 550px;
+    max-width: 100%;
+    height: auto;
 }
-.aboutHeading span:nth-child(1){
+.aboutHeading p:nth-child(1){
     font-size: 30px;
     font-weight: 400;
+    padding: 10px 20px;
 }
-.aboutHeading span:nth-child(2){
+.aboutHeading p:nth-child(2){
     color: #5C83C4;
     font-size: 30px;
     font-weight: 600;
     line-height: normal;
+    padding: 10px 20px;
 }
 .homepage_row4 header {
     margin-top: 5%;    
@@ -124,8 +131,6 @@ aside img{
     color: #FFF;
     text-align: center;
     text-overflow: ellipsis;
-    /* white-space: nowrap; */
-    /* font-family: Outfit; */
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
@@ -140,14 +145,37 @@ aside img{
     text-align: center;
 }
 .picture2_desc{
-    width: 550px;
-    height: 700px;
+    width: 40%;
+    min-width: 400px;
     border-radius: 30px;
     background: #FB9B51;
-    white-space: pre;
     font-size: 20px;
     font-weight: 400;
+    padding: 20px;
 }
+
+.picture2_desc .description p{
+    padding: 20px;
+}
+
+.picture2_desc button {
+    background-color: #2C599D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    float: right;
+}
+
 
 /* Hobbies page */
 .hobbies_container{
@@ -256,4 +284,233 @@ aside img{
     overflow: hidden;    
 }
 
+/* Write section */
 
+.write-container .intro {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.write-container .intro .intro-item {
+    width: 40%;
+    min-width: 400px;
+}
+
+.write-container .intro .text .heading{
+    margin: 20vh 0;
+    font-size: 50px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+}
+
+.write-container .intro .text .heading span:nth-child(1){
+    color: white; 
+}
+
+.write-container .intro .text .heading span:nth-child(2){
+    color: #F88125; 
+}
+
+.write-container .intro img.intro-item {
+    height: auto;
+} 
+
+/* Blog section */
+
+.blogs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.blogs .blog-item {
+    width: 40%;
+    min-width: 400px;
+    background: #5C83C4;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.blogs .blog-item img{
+    width: 50%; 
+    height: auto;
+    display: block;
+}
+
+.blogs .blog-item button {
+    background-color: #FB9B51;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    float: right;
+}
+
+/* Design container */
+
+.design-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.design-container .design-item {
+    width: 40%;
+    min-width: 400px;
+}
+
+.design-container .design-item img{
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.design-container .design-item .text{
+    margin-top: 56px;
+}
+
+.design-container .design-item .heading{
+    margin: 12vh 0;
+    font-size: 50px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+}
+
+.design-container .design-item .heading span:nth-child(1){
+    color: white; 
+}
+
+.design-container .design-item .heading span:nth-child(2){
+    color: #F88125; 
+}
+
+.design-container .design-item .description p:nth-child(1){
+    font-weight: 700; 
+}
+
+.design-container .design-item .description p{
+    margin: 2vh;
+}
+
+/* Contact page */
+.contact-container {
+    position: relative;
+    top: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.contact-container .contact-item {
+    width: 40%;
+    min-width: 400px;
+}
+
+.contact-container .left-panel img{
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+.contact-container .right-panel p{
+    margin: 40px;
+    font-size: 50px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+}
+
+.contact-container .right-panel p span:nth-child(1){
+    color: white; 
+}
+
+.contact-container .right-panel p span:nth-child(2){
+    color: #F88125; 
+}
+
+.contact-container .right-panel .form-container{
+    background-color: #FFF;
+    border-radius: 30px;
+    margin: 50px;
+}
+
+.contact-container .right-panel .form-container form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 70vh;
+    align-content: center;
+    gap: 5%;
+    padding: 0 7vw;
+    overflow: hidden;
+}
+
+.contact-container .right-panel .form-container form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact-container .right-panel .form-container form input[type="text"]:focus {
+    outline: none;
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.8);
+}
+
+.contact-container .right-panel .form-container form textarea {
+    padding: 10px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: none;
+}
+
+.contact-container .right-panel .form-container form textarea:focus {
+    outline: none;
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.8);
+}
+
+.contact-container .right-panel .form-container form input[type="submit"] {
+    background-color: #2C599D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
