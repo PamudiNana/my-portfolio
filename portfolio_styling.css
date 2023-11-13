@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    @font-face {
+        font-family: 'Outfit', sans-serif;
+        src: url("Outfit\Outfit-VariableFont_wght.ttf"); 
+    }
+/* * {
+    box-sizing: border-box;
+} */
+*{  margin: 0;
+    padding: 0;
+   
+}
+    
+body{
+    background: #11224E;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+         
+html{
+    scroll-behavior: smooth;
+}
+
+.homepage_container{
+    display: flex;
+}
+
+/* navigation bar */
+nav{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: fixed;
+    background: #F88125;
+    width: 100%;
+}
+nav a {
+    padding: 50px;
+    text-decoration: none;
+    color: #11224E;
+}
+
+.homepage_row2 {
+    height: 120vh;   
+    overflow: hidden;
+    
+}
+.homepage_row2 img {
+    width: 100%; 
+    padding-bottom: 0px;
+}
+ul{
+    list-style-type: none;
+}
+section li:nth-child(1){
+    font-size: 150%;
+    line-height: 80%;
+}
+section{
+    margin-top: -25%;
+    margin-left: 10%;
+    font-size: 650%;
+    position: flex;
+}
+
+.homepage_row3 li span{
+    color: #F88125;
+    text-shadow: 2px 2px 5px rgb(106, 103, 103);
+    border: #11224E;
+}
+.socialmedia{
+    /* background-color:white; */
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 250px;
+    width: 100px;
+    position: fixed;
+    margin-top: -35%;
+    border-radius: 20px;
+    /* position: absolute; */
+    right: 0;
+}
+
+aside img{
+    padding: 10px;
+    padding: 20px 10px 0px 20px;
+    height: 50px;
+    
+}
+
+.about{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+.picture2{
+    width: 550px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.picture2 img{
+    width: 550px;
+}
+.aboutHeading span:nth-child(1){
+    font-size: 30px;
+    font-weight: 400;
+}
+.aboutHeading span:nth-child(2){
+    color: #5C83C4;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+}
+.homepage_row4 header {
+    margin-top: 5%;    
+}
+
+.homepage_row4 header h1{
+    overflow: hidden;
+    color: #FFF;
+    text-align: center;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    /* font-family: Outfit; */
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.homepage_row4 h2{
+    color: white;
+    font-size: 50px;
+    font-family: Outfit;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-align: center;
+}
+.picture2_desc{
+    width: 550px;
+    height: 700px;
+    border-radius: 30px;
+    background: #FB9B51;
+    white-space: pre;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Hobbies page */
+.hobbies_container{
+    display: flex;
+    /* margin-top: 100px; */
+}
+.title{
+    height: 100vh;
+    overflow: hidden;
+}
+.hobbies_row1 p {
+    font-size: 100px;
+    font-weight: 400; 
+    text-align: center; 
+    padding-top: 15%;
+}
+.hobbies_row2 p{
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center; 
+}
+.hobbies_row2 span{
+    color: #F88125;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.hobbies_row3 img{
+    height: 400px;
+    margin-top: 1%;
+    margin-left: 5%;   
+}
+
+/* project area  */
+
+.project-title{
+    margin-left: 5%;
+}
+
+.project-title header{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.project-title p{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+
+.project-container{
+    display: flex;
+    background-color: #F88125;
+    padding: 10px;
+    width: 75%;
+    margin: auto;
+}
+.project-desc{
+    margin: 100px auto 50px;
+    width: 20%;
+}
+.project-container{
+    border-radius: 20px; 
+}
+.project-pictures{
+    width: 70%;
+    
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    /*To make the website responsive. When the webpage is minimzed, it will go up to 250px and then the item will jump to the next row*/
+    grid-gap:30px;   
+}
+
+.project-pictures img{
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 4px 7px 7px 0px #00000036;
+    transition: 400ms;
+    overflow: hidden;    
+}
+
+/* Gallery */
+.gallery-pictures{
+    width: 70%;
+    
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    /*To make the website responsive. When the webpage is minimzed, it will go up to 250px and then the item will jump to the next row*/
+    grid-gap:30px;   
+}
+
+.gallery-pictures img{
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 4px 7px 7px 0px #00000036;
+    transition: 400ms;
+    overflow: hidden;    
+}
+
+
