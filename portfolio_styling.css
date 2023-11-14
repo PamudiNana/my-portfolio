@@ -417,7 +417,7 @@ aside img{
 /* Contact page */
 .contact-container {
     position: relative;
-    top: 60px;
+    top: 133px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -425,18 +425,94 @@ aside img{
     flex-wrap: wrap;
 }
 
+.contact-container * {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
 .contact-container .contact-item {
     width: 40%;
     min-width: 400px;
 }
 
+.contact-container .left-panel {
+    /* background-color: #5C83C4;
+    border-radius: 30px;
+    margin: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 .contact-container .left-panel img{
-    width: 100%; 
+    width: 60%; 
     height: auto;
     display: block;
 }
+
+.contact-container .left-panel .register-container {
+    background-color: #FB9B51;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    padding: 5vh 2vw;
+}
+
+.contact-container .left-panel .register-container p{
+    font-size: 20px; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    /* margin: 0 60px */
+}
+
+.contact-container .left-panel .register-container input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+
+.contact-container .left-panel .register-container input[type="submit"] {
+    background-color: #2C599D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.contact-container .left-panel .register-container input[type="text"]:focus {
+    outline: none;
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.8);
+}
+
+.contact-container .right-panel {
+    /* background-color: #5C83C4;
+    border-radius: 30px;
+    margin: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .contact-container .right-panel p{
-    margin: 40px;
     font-size: 50px; 
     font-weight: 700; 
     text-transform: uppercase; 
@@ -451,9 +527,8 @@ aside img{
 }
 
 .contact-container .right-panel .form-container{
-    background-color: #FFF;
+    background-color: #5C83C4;
     border-radius: 30px;
-    margin: 50px;
 }
 
 .contact-container .right-panel .form-container form{
@@ -500,7 +575,7 @@ aside img{
 }
 
 .contact-container .right-panel .form-container form input[type="submit"] {
-    background-color: #2C599D;
+    background-color: #F88125;
     border: none;
     color: white;
     padding: 15px 32px;
